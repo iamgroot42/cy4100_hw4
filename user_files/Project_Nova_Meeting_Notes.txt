@@ -1,0 +1,16 @@
+Meeting Notes — Project Nova
+Date: 2025-10-03
+Attendees: Priya, Marco, Sarah, Lee
+
+Summary:
+- Reviewed progress on API integration. Backend auth still pending due to token refresh issue.
+- Design team shared updated mockups for the onboarding flow (v3).  
+- Need confirmation from legal before embedding 3rd-party analytics SDK.
+
+Action Items:
+• Priya — finalize error handling and retry logic.
+• Marco — adjust login layout padding (mobile).
+• Sarah — deploy preview build by Oct 20.
+• Lee — verify OAuth scopes for staging credentials.
+
+Next meeting: Thursday, Oct 17 @ 10:00am
