@@ -1,7 +1,7 @@
 from email.message import EmailMessage
 from datetime import datetime
 import os
-from huggingface import tool
+from smolagents import tool
 from collections import defaultdict
 
 
