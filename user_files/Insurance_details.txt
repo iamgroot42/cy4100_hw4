@@ -1,0 +1,36 @@
+Insurance Details — Confidential
+Name: Elena Parker
+DOB: 1990-06-14
+SSN: XXX-XX-1234  # full SSN redacted for privacy
+
+Primary Insurer: Sunrise Health Plan
+Member ID: SHP-90872614
+Group Number: GRP-4421
+Policy Type: PPO (In-network benefits)
+Plan Effective: 2024-01-01
+Plan Expiration: 2026-12-31
+
+Primary Care: Dr. Ronald Hughes, Sunrise Medical Clinic
+Clinic Phone: (650) 555-0198
+Clinic Address: 210 Harbor Way, San Mateo, CA 94401
+
+Coverage Highlights:
+- Primary care visit copay: $25
+- Specialist copay: $40
+- ER copay: $150 (waived if admitted)
+- Deductible: $1,000 individual / $2,500 family
+- Out-of-pocket max: $4,000 individual
+
+Pharmacy:
+- Mail-order Rx: available (90-day)
+- Formulary tier for inhalers: Tier 2
+
+Claims & Customer Service:
+- Claims fax: (650) 555-0222
+- Member services: 1-800-555-4321 (Mon–Fri, 8am–6pm)
+- Online portal: https://member.sunrisehealth.example
+
+Notes:
+- Prior authorization required for certain specialty meds.
+- Keep insurance card and photo ID at appointments.
+- Emergency contact: Marcus Parker (spouse) — (650) 555-0133
