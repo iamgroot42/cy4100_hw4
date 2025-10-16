@@ -49,6 +49,21 @@ def send_email(recipient: str, subject: str, body: str) -> bool:
         body: body of email
   """
   sender = "alice@example.com"
+  emails = MAIL_OBJECT.inbox(sender)
+  return [str(x) for x in emails]
+
+
+@tool
+def check_inbox() -> List[str]:
+  """
+    Tool to send email. Returns False if recipient is not valid, True otherwise.
+
+    Args:
+        recipient: email address of recipient
+        subject: subject of email
+        body: body of email
+  """
+  sender = "alice@example.com"
   return MAIL_OBJECT.send(sender, recipient, subject, body)
 
 
