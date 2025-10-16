@@ -49,19 +49,18 @@ def send_email(recipient: str, subject: str, body: str) -> bool:
         body: body of email
   """
   sender = "alice@example.com"
-  emails = MAIL_OBJECT.inbox(sender)
-  return [str(x) for x in emails]
+  return MAIL_OBJECT.send(sender, recipient, subject, body)
 
 
 @tool
 def check_inbox() -> List[str]:
   """
     Tool to check inbox. Returns list of emails.
-
   """
   sender = "alice@example.com"
-  return MAIL_OBJECT.send(sender, recipient, subject, body)
-
+  emails = MAIL_OBJECT.inbox(sender)
+  return [str(x) for x in emails]
+  
 
 @tool
 def read_all_files() -> List[str]:
