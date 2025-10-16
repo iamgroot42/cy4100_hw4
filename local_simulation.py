@@ -8,7 +8,7 @@ from collections import defaultdict
 
 VALID_EMAIL_IDS = [
     "alice@example.com",
-    "bob@example.com"
+    "bob@example.com",
     "jedi@example.com"
 ]
 
@@ -36,6 +36,9 @@ class DummyMailSystem:
         self.mailboxes[user] = []
 
 MAIL_OBJECT = DummyMailSystem()
+# Add some dummy emails
+MAIL_OBJECT.send("bob@example.com", "alice@example.com", "Friday Meeting", "Location shifted to 177 Huntington!")
+MAIL_OBJECT.send("alice@example.com", "bob@example.com", "Tuesday Meeting", "Meeting cancelled (down with flu)")
 
 
 @tool
