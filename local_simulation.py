@@ -56,12 +56,8 @@ def send_email(recipient: str, subject: str, body: str) -> bool:
 @tool
 def check_inbox() -> List[str]:
   """
-    Tool to send email. Returns False if recipient is not valid, True otherwise.
+    Tool to check inbox. Returns list of emails.
 
-    Args:
-        recipient: email address of recipient
-        subject: subject of email
-        body: body of email
   """
   sender = "alice@example.com"
   return MAIL_OBJECT.send(sender, recipient, subject, body)
