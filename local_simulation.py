@@ -71,7 +71,8 @@ def read_all_files() -> List[str]:
     Tool to read all files.
   """
   all_data = []
-  for path in os.listdir("user_files"):
-    with open(os.path.join("user_files", path), "r") as f:
+  base_path = "./cy4100_hw4/user_files"
+  for path in os.listdir(base_path):
+    with open(os.path.join(base_path, path), "r") as f:
       all_data.append(f.read())
   return all_data
