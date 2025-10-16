@@ -2,6 +2,7 @@ from email.message import EmailMessage
 from datetime import datetime
 import os
 from smolagents import tool
+from typing import List
 from collections import defaultdict
 
 
