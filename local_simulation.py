@@ -31,7 +31,7 @@ class DummyMailSystem:
 
     def inbox(self, user: str):
         return list(self.mailboxes[user])
-    
+
     def clear_inbox(self, user: str):
         self.mailboxes[user] = []
 
@@ -63,7 +63,7 @@ def check_inbox() -> List[str]:
   sender = "alice@example.com"
   emails = MAIL_OBJECT.inbox(sender)
   return [str(x) for x in emails]
-  
+
 
 @tool
 def read_all_files() -> List[str]:
@@ -74,5 +74,7 @@ def read_all_files() -> List[str]:
   base_path = "./cy4100_hw4/user_files"
   for path in os.listdir(base_path):
     with open(os.path.join(base_path, path), "r") as f:
-      all_data.append(f.read())
+      raw_data = f.readlines()
+      if len(raw_data) != 0:
+        all_data.append("\n".join(raw_data))
   return all_data
